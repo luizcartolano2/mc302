@@ -1,0 +1,20 @@
+Quando executamos os comando de impressão do atributo nome com modificador "public",
+obtemos a seguinte saída:
+
+"  You shall not pass
+  You shall not pass
+"
+Agora, quando executamos os comando de impressão do atributo nome com modificador "private",
+obtemos a seguinte saída (o seguinte código de erro no caso):
+
+"  Exception in thread "main" java.lang.Error: Unresolved compilation problem:
+  	  The field CartaMagia.nome is not visible
+
+	  at lab02.Main.main(Main.java:27)
+"
+Usamos os atributos de uma classe associado ao modificador "privado", para garantir que somente
+a própria classe saberá da existência desses atributos, o que nos garante alguns benefícios e
+evitam problemas (como no caso da segurança do seu projeto).
+
+Já o uso dos métodos get() e set() se dão para permitir o uso dos atributos da classe por outras
+instâncias do projeto, mas de maneira indireta e mais segura.

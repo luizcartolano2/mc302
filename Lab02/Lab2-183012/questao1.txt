@@ -1,0 +1,12 @@
+Quando fazemos o pedido pelo enunciado temos a seguinte saída no terminal:
+
+"  Darth Vader(ID = 4)
+  Ataque = 0
+  Vida Atual = 0
+  Vida Maxima = 0
+  Custo de Mana = 6
+"
+
+Isto é, os atributos não inicializados recebem o valor zero. Isso acontece porque quando
+não instanciamos os atributos do objeto, Java, por "default" os instância com zero (caso
+seja um número), ou com null (caso não sejam números).

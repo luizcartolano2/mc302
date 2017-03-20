@@ -1,0 +1,11 @@
+Quando imprimimos o estado dos objetos cartaMagia após comentarmos o método toString da classe,
+obtemos a seguinte saída:
+
+"  lab02.CartaMagia@7852e922
+  lab02.CartaMagia@4e25154f
+"
+Isto é, ocorre o "retorno padrão" do método toString, que é a classe da qual o objeto é uma instância,
+o carácter "@" e a representação hexadecimal (sem sinal) do código hash do objeto. Como mostrado pela
+documentação do eclipse, esse seria o código de retorno padrão do método em questão:
+
+"    [code]getClass (). getName () + '@' + Integer.toHexString (hashCode ())[/code]   "

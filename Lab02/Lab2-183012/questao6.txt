@@ -1,0 +1,22 @@
+Usando os seguintes comandos na main:
+
+"
+  lac1.buffar(8);
+  lac3.buffar(10, 8);
+"
+
+	Obtemos a seguinte saída:
+
+"
+  Frodo Bolseiro Buffed(ID = 1)
+  Ataque = 10
+  Vida Atual = 9
+  Vida Maxima = 9
+  Custo de Mana = 1
+
+  LegolasBuffed(ID = 3)
+  Ataque = 18
+  Vida Atual = 12
+  Vida Maxima = 12
+  Custo de Mana = 6
+"

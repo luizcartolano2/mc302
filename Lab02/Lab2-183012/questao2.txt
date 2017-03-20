@@ -1,0 +1,8 @@
+Ao fazermos o pedido temos a seguinte saída:
+
+"  Frodo Bolseiro (ID = 1)
+  Ataque = 8
+  Vida Atual = 1
+  Vida Maxima = 1
+  Custo de Mana = 1
+"
