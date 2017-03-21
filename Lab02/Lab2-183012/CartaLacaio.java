@@ -7,7 +7,7 @@ public class CartaLacaio {
 	private int vidaAtual;
 	private int vidaMaxima;
 	private int custoMana;
-	
+
 	// metodo construtor original, que instancia todos os atributos
 	public CartaLacaio(int ID, String nome, int ataque, int vida, int mana) {
 		this.ID = ID;
@@ -17,14 +17,14 @@ public class CartaLacaio {
 		this.vidaMaxima = vida;
 		this.custoMana = mana;
 	}
-	
+
 	// metodo construtor reduzido, instancia os atributos ID, nome e custo mana
 	public CartaLacaio(int ID, String nome, int mana) {
 		this.ID = ID;
 		this.nome = nome;
 		this.custoMana = mana;
-	}		
-	
+	}
+
 	// metodo construtor copia, ira copiar os atributos de um objeto passado por parametro
 	public CartaLacaio(CartaLacaio origem ) {
 		this.ID = origem.getID();
@@ -34,7 +34,7 @@ public class CartaLacaio {
 		this.vidaMaxima = origem.getVidaAtual();
 		this.custoMana = origem.getCustoMana();
 	}
-	
+
 	public int getID() {
 		return ID;
 	}
@@ -82,7 +82,7 @@ public class CartaLacaio {
 	public void setCustoMana(int custoMana) {
 		this.custoMana = custoMana;
 	}
-	
+
 	public String toString() {
 		String out = getNome() + "(ID = "+getID()+")\n";
 		out = out + "Ataque = "+getAtaque()+"\n";
@@ -91,29 +91,26 @@ public class CartaLacaio {
 		out = out + "Custo de Mana = "+getCustoMana()+"\n";
 		return out;
 	}
-	
+
 	// implementar os metodos "buffar" :
 	void buffar (int a) {
 		if (a > 0){
 			setAtaque(getAtaque()+a);
 			setVidaAtual(getVidaAtual()+a);
-			setVidaMaxima(getVidaMaxima()+a);
 			alteraNomeFortalecido();
 		}
 	}
-	
+
 	void buffar (int a, int v) {
-		if (a > 0)
+		if (a > 0 && v > 0) {
 			setAtaque(getAtaque()+a);
-		if (v > 0)
 			setVidaAtual(getVidaAtual()+v);
-			setVidaMaxima(getVidaMaxima()+v);
-		if(a > 0 || v > 0)
-			alteraNomeFortalecido();	
+			alteraNomeFortalecido();
+		}
 	}
-	
+
 	void alteraNomeFortalecido() {
 		setNome(getNome()+"Buffed");
 	}
-	
+
 }

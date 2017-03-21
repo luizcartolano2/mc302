@@ -95,12 +95,12 @@ Usando os seguintes comandos na main:
   Frodo Bolseiro Buffed(ID = 1)
   Ataque = 10
   Vida Atual = 9
-  Vida Maxima = 9
+  Vida Maxima = 1
   Custo de Mana = 1
 
   LegolasBuffed(ID = 3)
   Ataque = 18
   Vida Atual = 12
-  Vida Maxima = 12
+  Vida Maxima = 4
   Custo de Mana = 6
 "
