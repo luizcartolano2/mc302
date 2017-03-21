@@ -1,0 +1,106 @@
+Questao 1:
+
+Quando fazemos o pedido pelo enunciado temos a seguinte saída no terminal:
+
+"  Darth Vader(ID = 4)
+  Ataque = 0
+  Vida Atual = 0
+  Vida Maxima = 0
+  Custo de Mana = 6
+"
+
+Isto é, os atributos não inicializados recebem o valor zero. Isso acontece porque quando
+não instanciamos os atributos do objeto, Java, por "default" os instância com zero (caso
+seja um número), ou com null (caso não sejam números).
+
+Questao 2:
+
+Ao fazermos o pedido temos a seguinte saída:
+
+"  Frodo Bolseiro (ID = 1)
+  Ataque = 8
+  Vida Atual = 1
+  Vida Maxima = 1
+  Custo de Mana = 1
+"
+
+Questao 3:
+
+Quando imprimimos o estado dos objetos cartaMagia após comentarmos o método toString da classe,
+obtemos a seguinte saída:
+
+"  lab02.CartaMagia@7852e922
+  lab02.CartaMagia@4e25154f
+"
+Isto é, ocorre o "retorno padrão" do método toString, que é a classe da qual o objeto é uma instância,
+o carácter "@" e a representação hexadecimal (sem sinal) do código hash do objeto. Como mostrado pela
+documentação do eclipse, esse seria o código de retorno padrão do método em questão:
+
+"    [code]getClass (). getName () + '@' + Integer.toHexString (hashCode ())[/code]   "
+
+Questao 4:
+
+Ao fazer o que é pedido pelo enunciado e imprimir o estado dos objetos lac2 e lac5, obtemos a
+seguinte saída:
+"
+  Aragorn(ID = 2)
+  Ataque = 5
+  Vida Atual = 7
+  Vida Maxima = 7
+  Custo de Mana = 6
+
+  Aragorn(ID = 2)
+  Ataque = 5
+  Vida Atual = 7
+  Vida Maxima = 7
+  Custo de Mana = 6
+"
+	Ou seja, ambos os objetos são exatamente iguais!
+
+Questao 5:
+
+Quando executamos os comando de impressão do atributo nome com modificador "public",
+obtemos a seguinte saída:
+
+"  You shall not pass
+  You shall not pass
+"
+Agora, quando executamos os comando de impressão do atributo nome com modificador "private",
+obtemos a seguinte saída (o seguinte código de erro no caso):
+
+"  Exception in thread "main" java.lang.Error: Unresolved compilation problem:
+  	  The field CartaMagia.nome is not visible
+
+	  at lab02.Main.main(Main.java:27)
+"
+Usamos os atributos de uma classe associado ao modificador "privado", para garantir que somente
+a própria classe saberá da existência desses atributos, o que nos garante alguns benefícios e
+evitam problemas (como no caso da segurança do seu projeto).
+
+Já o uso dos métodos get() e set() se dão para permitir o uso dos atributos da classe por outras
+instâncias do projeto, mas de maneira indireta e mais segura.
+
+Questao 6:
+
+Usando os seguintes comandos na main:
+
+"
+  lac1.buffar(8);
+  lac3.buffar(10, 8);
+"
+
+	Obtemos a seguinte saída:
+
+"
+  Frodo Bolseiro Buffed(ID = 1)
+  Ataque = 10
+  Vida Atual = 9
+  Vida Maxima = 9
+  Custo de Mana = 1
+
+  LegolasBuffed(ID = 3)
+  Ataque = 18
+  Vida Atual = 12
+  Vida Maxima = 12
+  Custo de Mana = 6
+"
