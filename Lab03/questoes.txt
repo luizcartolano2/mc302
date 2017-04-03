@@ -1,0 +1,54 @@
+Questão 1:
+  Se adiciornamos mais de 10 cartas a classe "Baralho", da maneira a qual
+  ela está implementada, o Java acusará o erro de que o indíce do array
+  excede os limites pré estabelecidos.
+  Copiando o output do console, recebemos a seguinte mensagem:
+    " Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
+  	  at com.Luiz.base.Baralho.adicionarCarta(Baralho.java:16)
+  	  at Main.main(Main.java:43) "
+
+
+Questão 2:
+  Se tentarmos comprar uma carta da classe "Baralho" com o baralho vazio, o
+  Java acusará o erro de que o indíce do array excede os limites pré estabe-
+  lecidos.
+  Copiando o output do console, recebemos a seguinte mensagem:
+    " Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+  	  at com.Luiz.base.Baralho.comprarCarta(Baralho.java:22)
+  	  at Main.main(Main.java:44)"
+
+
+Questão 3:
+  O atributo "gerador" pode ser do tipo "static", pois ele se mantém igual
+  independentemente do objeto, isto é, ele vai possuir o mesmo valor para
+  qualquer instância.
+  A diferença de escopo entre um atributo "static" e um "non-static" é que
+  o atributo "non-static" é específico de cada objeto, enquanto o "static"
+  é o mesmo para todos os objetos intanciados da classe.
+
+
+Questão 4:
+    O atributo "gerador" não é inicializado no construtor da classe Baralho,
+    pois caso isso acontecesse objetos diferentes instanciados em curtos es-
+    paços de diferença teriam a mesma seed e gerariam números randômicos se-
+    melhantes.	
+    Em nosso programa o comando "new Random()" será executado uma única vez,
+    pois é um atributo do tipo "static" e só será "instanciado" na criação
+    do primeiro objeto da classe "Baralho".
+
+
+Questão 5:
+    O benefício de se criar a classe "Util" é, em especial, de se organizar o
+    código. Isto é, agrupar funções "padrões" em um mesmo arquivo deixa o código
+    mais limpo e compreensível.
+    Já com relação ao uso dos métodos estáticos, sua vantagem está no fato de que
+    eles podem ser chamados sem serem instanciados, o que economiza memória do programa.
+    O mesmo vale para a variável final estática, ela será instancianda apenas uma vez.
+
+
+Questão 6:
+    Algumas das vantagens em implementar a classe "Baralho" com ArrayList são:
+    1 - Arrays simples possuem uma capacidade limitada. Já os ArrayLists não,
+      eles podem crescer dinamicamente.
+    2 - ArrayList permite que elementos sejam acessados diretamente pelos métodos
+      get() e set(), e adicionados através de add() e remove().
