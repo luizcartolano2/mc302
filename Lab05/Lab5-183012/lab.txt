@@ -1,0 +1,9 @@
+Taxa de vitória inicial: 60,58%
+Taxa de vitória final: 73,74%
+
+  Para aumentar a taxa de vitórias do meu jogador implementei as seguintes mudanças:
+  1 - Baixar mais de um lacaio e de uma magia por rodada (aumentando o numero de possiveis atacantes
+  e de alvos/buffs feitos por Magia)
+  2 - Escolher o lacaio no qual aplico a carta Buff (aumentando a eficácia da mesma)
+  3 - Usar o poder do Heroi (mais um tipo de ataque)
+  4 - Uma condicão que não me permite usar magias de area/alvo se não houver alvos para as mesmas.
