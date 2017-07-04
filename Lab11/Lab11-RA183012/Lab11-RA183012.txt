@@ -1,0 +1,12 @@
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+QUESTAO EXTRA DO LAB11:
+
+    A classe UnoptimizedDeepCopy eh utilizada pois ela garante que nao so os os campos de cada
+  objeto sejam copiados mas tambem faz com que todos os enderecos de memoria "apontado" pelo
+  objeto sejam tambem copiados.
+    Caso o exemplo do enunciado fosse verdade, o motor teria problemas para atualizar os campos
+  atualizados pelo jogador.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+

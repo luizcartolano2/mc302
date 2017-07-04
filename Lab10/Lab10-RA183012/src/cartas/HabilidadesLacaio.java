@@ -1,0 +1,5 @@
+package cartas;
+
+public enum HabilidadesLacaio {
+	EXAUSTAO, PROVOCAR, INVESTIDA
+}

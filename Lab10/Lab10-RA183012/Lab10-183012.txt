@@ -1,0 +1,21 @@
+Questao 1:
+    Uma vez que o metodo responsavel por serializar as cartas
+foi feito de forma generica, para serializar o baralho, eu iria
+percorrer o vetor de cartas do baralho, e para cada carta invo-
+caria o metodo "escreveArquivo", sendo que este cuidaria da
+serializacao.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Saida gerada pelo codigo:
+***************************************************
+IMPRIMINDO AS CARTAS ANTES DE SERIALIZAR:
+Carta [nome=Lab, custoMana=1] [1/1] Habilidade: null
+Carta [nome=pra, custoMana=1] [+1/+1]
+Carta [nome=chato, custoMana=1]
+Carta [nome=p, custoMana=1]
+***************************************************
+***************************************************
+IMPRIMINDO AS CARTAS DEPOIS DE SERIALIZAR:
+[Carta [nome=Lab, custoMana=1] [1/0] Habilidade: null, Carta [nome=chato, custoMana=1], Carta [nome=pra, custoMana=1] [+1/+1], Carta [nome=p, custoMana=1]]
+***************************************************
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
