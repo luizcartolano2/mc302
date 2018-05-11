@@ -1,0 +1,18 @@
+                                    if (jogador == 1) {
+                                        vidaHeroi2 -= ((CartaLacaio) cartaJogada).getAtaque();
+                                        lacaiosAtacaramID.add(cartaJogada.getID());
+                                        imprimir("JOGADA: O heroi "+jogadorOponente+
+                                                " sofreu um ataque de = "+((CartaLacaio) cartaJogada).getAtaque()+
+                                                " e tem vida restante de = "+vidaHeroi2);
+                                    } else {
+                                        vidaHeroi1 -= ((CartaLacaio) cartaJogada).getAtaque();
+                                        lacaiosAtacaramID.add(cartaJogada.getID());
+                                        imprimir("JOGADA: O heroi "+jogadorOponente+
+                                                " sofreu um ataque de = "+((CartaLacaio) cartaJogada).getAtaque()+
+                                                " e tem vida restante de = "+vidaHeroi1);
+                                    }
+
+
+                                  String errorMessage = "O lacaio de id " + cartaJogada.getID() + " ja atacou no turno";
+                                                                      imprimir(errorMessage);
+                                                                      throw new LamaException(7,umaJogada,errorMessage,jogadorOponente);
